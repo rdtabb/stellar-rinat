@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stellar Rinat's Portfolio</title>
+  <link rel="icon" href="./assets/star-icon.svg">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav class="nav primary-container">
+      <p class="nav__logo">Rinat's Portfolio</p>
+      <div class="list-wrapper">
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="#about" class="nav-list__link">About</a></li>
+          <li class="nav-list__item"><a href="#projects" class="nav-list__link">Projects</a></li>
+          <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact</a></li>
+        </ul>
+        <div class="flex-justify-between">
+          <a target="_blank" href="https://github.com/rdtabb" class="nav-link">
+            <img src="./assets/github-mark-white.svg" class="nav-link__img" alt="github-icon">
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/rinat-tabaev-profile/" class="nav-link">
+            <img src="./assets/lin.svg" class="nav-link__img" alt="linkedin-icon">
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <article class="lead">
+      <h1 class="lead__heading">Hi, I'm Rinat.<span>Full-stack web-developer.</span></h1>
+      <p class="lead__cta">Drag sphere to see come magic</p>
+      <p class="lead__paragraph">Scroll to get stellar experience.</p>
+    </article>
+
+    <canvas class="webgl"></canvas>
+
+  </header>
+
+  <main class="main medium-container">
+
+    <section id="about" class="about">
+      <h2 class="about__heading">About me</h1>
+      <p class="about__description">
+        I am the Full-stack web developer with the passion for learning new technologies 
+        and constantly developing myself as a programmer. I use MERN stack (with MySQL as M),
+        although I am proficient with both SQL and NoSQL databases.
+      </p>
+      <p class="about__description">
+        I am a third-year student in the Higher School of Economics in Moscow, 
+        where for a year I have been studying web-development, algorithms and data sctructures.
+      </p>
+      <div class="techs">
+        <h3 class="techs__title">My tech stack</h3>
+        <ul class="techs__list">
+          <li><img src="./assets/html.svg" alt="Html-icon" class="techs__image"></li>
+          <li><img src="./assets/sass-1.svg" alt="Sass-icon" class="techs__image"></li>
+          <li><img src="./assets/jslogo.svg" alt="JS-icon" class="techs__image"></li>
+          <li><img src="./assets/typescript.svg" alt="TS-icon" class="techs__image"></li>
+          <li><img src="./assets/threeproper.svg" alt="threejs-icon" class="techs__image"></li>
+          <li><img src="./assets/React-icon.svg" alt="React-icon" class="techs__image"></li>
+          <li><img src="./assets/firebase.svg" alt="Firebase-icon" class="techs__image"></li>
+          <li><img src="./assets/mysql.svg" alt="Mysql-icon" class="techs__image"></li>
+          <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon" class="techs__image query-icon"></li>
+          <li><img src="./assets/express.svg" alt="Express-icon" class="techs__image"></li>
+          <li><img src="./assets/nodejs-icon.svg" alt="Node-icon" class="techs__image"></li>
+          <li><img src="./assets/git.svg" alt="Git-icon" class="techs__image"></li>
+        </ul>
+      </div>
+      <div class="stats">
+        <h3 class="stats__title">Some numbers</h3>
+        <div class="stats__wrapper">
+          <div class="numbers">
+            <p class="numbers__heading">10000+</p>
+            <p>lines of code every month</p>
+          </div>
+          <div class="numbers">
+            <p class="numbers__heading">350+</p>
+            <p>lines of code every day</p>
+          </div>
+          <div class="numbers">
+            <p class="numbers__heading">180 days</p>
+            <p>coding without missing a day</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="projects__heading">My projects</h2>
+
+      <div class="projects__container">
+        <div class="project__container">
+          <article class="project">
+            <img src="./assets/blog.png" alt="Expressive-blog" class="project__cover project__cover--expressive">
+            <div class="project__info-wrapper">
+              <h2 class="project__title">Expressive. Blog.</h2>
+              <div class="project__description">
+                <ul class="functionality">
+                  <li> - This project is a personal blog app, which I have created for personal use</li>
+                  <li> - Navigate different pages via React-Router</li>
+                  <li> - Your posts are saved in local storage</li>
+                  <li> - Create posts</li>
+                  <li> - Delete posts</li>
+                  <li> - Edit posts</li>
+                  <li> - Search your posts</li>
+                </ul>
+                <ul class="technologies">
+                  <li><img src="./assets/React-icon.svg" alt="React-icon"></li>
+                  <li><img src="./assets/sass-1.svg" alt="Sass-icon"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <ul class="project__links">
+            <a target="_blank" href="https://github.com/rdtabb/Express-blog.github.io" class="link"><img src="./assets/github-mark-white.svg" alt=""></a>
+            <a target="_blank" href="https://expressive-blog.netlify.app/" class="link"><img src="./assets/internet.png" alt=""></a>
+          </ul>
+        </div>
+
+        <div class="project__container">
+          <article class="project">
+            <img src="./assets/sneakers.png" alt="Sneakers-ecommerce" class="project__cover project__cover--sneakers">
+            <div class="project__info-wrapper">
+              <h2 class="project__title">Sneakers. E-commerce.</h2>
+              <div class="project__description">
+                <ul class="functionality">
+                  <li> - This project is the Front-end simulation of an e-commerce website experience</li>
+                  <li> - Created complex state-management system using useReducer() hook and Context API</li>
+                  <li> - Created two custom hooks</li>
+                  <li> - Learned Typescript in depth</li>
+                  <li> - User can add items to cart</li>
+                  <li> - User can view cart and change number of items</li>
+                  <li> - User can place the order</li>
+                </ul>
+                <ul class="technologies">
+                  <li><img src="./assets/React-icon.svg" alt="React-icon"></li>
+                  <li><img src="./assets/sass-1.svg" alt="Sass-icon"></li>
+                  <li><img src="./assets/typescript.svg" alt="Sass-icon"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <ul class="project__links">
+            <a target="_blank" href="https://github.com/rdtabb/Online-shop" class="link"><img src="./assets/github-mark-white.svg" alt=""></a>
+            <a target="_blank" href="https://sneakerecommerc.netlify.app/" class="link"><img src="./assets/internet.png" alt=""></a>
+          </ul>
+        </div>
+
+        <div class="project__container">
+          <article class="project project--fullstack">
+            <img src="./assets/blog.png" alt="Expressive-blog" class="project__cover project__cover--fullstack">
+            <div class="project__info-wrapper">
+              <h2 class="project__title">Expressive Full-stack. In process.</h2>
+              <div class="project__description">
+                <ul class="functionality">
+                  <li> - This is the remake of the "Expressive Blog" project</li>
+                  <li> - This is full-stack application with user-authentication</li>
+                  <li> - After registration and login users can make text posts in their profiles</li>
+                  <li> - Users can view and comment each other's posts</li>
+                  <li> - Frontend tech: React, SASS, Typescript</li>
+                  <li> - Backend tech: ExpressJS, NodeJS, MySQL</li>
+                </ul>
+                <ul class="technologies technologies--fullstack">
+                  <li><img src="./assets/React-icon.svg" alt="React-icon"></li>
+                  <li><img src="./assets/sass-1.svg" alt="React-icon"></li>
+                  <li><img src="./assets/typescript.svg" alt="React-icon"></li>
+                  <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon" class="techs__image query-icon"></li>
+                  <li><img src="./assets/mysql.svg" alt="Sass-icon"></li>
+                  <li><img src="./assets/express.svg" alt="Sass-icon"></li>
+                  <li><img src="./assets/nodejs-icon.svg" alt="Sass-icon"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <ul class="project__links">
+            <a target="_blank" href="https://github.com/rdtabb/Expressive.-Full-stack-blog" class="link"><img src="./assets/github-mark-white.svg" alt=""></a>
+          </ul>
+        </div>
+
+        <div class="project__container">
+          <article class="project project--meets">
+            <img src="./assets/meets.png" alt="Meets-network" class="project__cover project__cover--meets">
+            <div class="project__info-wrapper">
+              <h2 class="project__title">Meets. Social network.</h2>
+              <div class="project__description">
+                <ul class="functionality">
+                  <li> - Full-stack social network application with user authentication and signout functionality</li>
+                  <li> - After authenticating, you can edit your profile and add posts with photos</li>
+                  <li> - You can view other users' profiles and like their posts</li>
+                  <li> - All the posts you liked can be viewed on the separate page in your profile</li>
+                  <li> - You can send message to any user in a separate chat-room</li>
+                  <li> - Backend is handled by Firebase, while Frontend is made via React, TS and SASS</li>
+                </ul>
+                <ul class="technologies">
+                  <li><img src="./assets/React-icon.svg" alt="React-icon"></li>
+                  <li><img src="./assets/sass-1.svg" alt="Sass-icon"></li>
+                  <li><img src="./assets/typescript.svg" alt="Sass-icon"></li>
+                  <li><img src="./assets/firebase.svg" alt="firebase-icon"></li>
+                  <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon" class="techs__image query-icon"></li>                </ul>
+              </div>
+            </div>
+          </article>
+          <ul class="project__links">
+            <a target="_blank" href="https://github.com/rdtabb/Meets" class="link"><img src="./assets/github-mark-white.svg" alt=""></a>
+            <a target="_blank" href="https://meetsnetwork.netlify.app/" class="link"><img src="./assets/internet.png" alt=""></a>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section id="contact" class="contact">
+    <article class="cta">
+      <div class="cta__positioning">
+        <h2 class="cta__heading">
+          Like what you see? Contact me
+        </h2>
+        <div class="cta__contacts"> 
+          <p class="cta__email">rintabaev@gmail.com</p>
+          <p class="cta__number">+79963549619</p>
+        </div>
+       <p class="submitted">Form submitted successfully!</p>
+      </div>
+    </article>
+    <form data-netlify="true" method="post" action="/#contact" name="contact-form" id="form" class="form medium-container">
+      <div class="form__userdata">
+        <input required minlength="2" class="form__name" name="name" placeholder="Your name..." type="text">
+        <input required class="form__email" name="email" placeholder="Your email..." type="email">
+      </div>
+      <textarea required class="form__message" placeholder="Your message..." name="message" cols="20" rows="10"></textarea>
+      <button type="submit" class="form__submit">Submit</button>
+    </form>
+  </section>
+
+  <footer class="footer medium-container">
+    <p class="footer__copyright">&copy; Copyright 2023</p>
+  </footer>
+
+  <script type="module" src="./three.js"></script>
+</body>
+
+</html>
