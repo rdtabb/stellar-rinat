@@ -233,7 +233,7 @@ body {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 600px) {
   .list-wrapper {
     align-items: start !important;
   }
@@ -254,7 +254,6 @@ body {
   gap: clamp(4rem, 10vw, 10rem);
   position: relative;
   z-index: var(--z-200);
-  margin-top: clamp(2rem, 10vw, 8rem);
 }
 
 .experience {
@@ -561,6 +560,11 @@ body {
 
 .about {
   display: grid;
+  place-content: center;
+}
+
+.about-wrapper {
+  display: grid;
   gap: 2rem;
 
   &__heading {
@@ -571,6 +575,12 @@ body {
   &__description {
     max-width: 70ch;
     font-size: clamp(var(--fs-300), 3vw, var(--fs-400));
+  }
+}
+
+@media (min-width: 900px) {
+  .about {
+    height: 100dvh;
   }
 }
 
