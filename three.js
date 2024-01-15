@@ -69,7 +69,7 @@ Array(200).fill().forEach(addStar);
 
 window.addEventListener("resize", () => {
   sizes.width = window.innerWidth;
-  sizes.height = window.innerHeight;
+//   sizes.height = window.innerHeight;
 
   camera.aspect = sizes.width / sizes.height;
   camera.updateProjectionMatrix();

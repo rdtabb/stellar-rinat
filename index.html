@@ -2,226 +2,248 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stellar Rinat's Portfolio</title>
-  <link rel="icon" href="./assets/star-icon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Iceland&family=JetBrains+Mono&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellar Rinat's Portfolio</title>
+    <link rel="icon" href="./assets/star-icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iceland&family=JetBrains+Mono&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="header">
-    <nav class="nav primary-container">
-      <p class="nav__logo">Rinat's Portfolio</p>
-      <div class="list-wrapper">
-        <ul class="nav-list">
-          <li class="nav-list__item"><a href="#about" class="nav-list__link">About</a></li>
-          <li class="nav-list__item"><a href="#experience" class="nav-list__link">Experience</a></li>
-          <li class="nav-list__item"><a href="#projects" class="nav-list__link">Projects</a></li>
-          <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact</a></li>
-        </ul>
-        <div class="flex-justify-between">
-          <a target="_blank" href="https://github.com/rdtabb" class="nav-link">
-            <img src="./assets/github-mark-white.svg" class="nav-link__img" alt="github-icon">
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/rinat-tabaev-profile/" class="nav-link">
-            <img src="./assets/lin.svg" class="nav-link__img" alt="linkedin-icon">
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <article class="lead">
-      <h1 class="lead__heading">Hi, I'm Rinat.<span>Front-end engineer.</span></h1>
-      <p class="lead__cta">Drag sphere to see come magic</p>
-      <p class="lead__paragraph">Scroll to get stellar experience.</p>
-    </article>
-
-    <canvas class="webgl"></canvas>
-
-  </header>
-
-  <main class="main medium-container">
-
-    <section id="about" class="about">
-      <div class="about-wrapper">
-      
-        <h2 class="section-heading">About me</h1>
-          <p class="about__description">
-            I am the Front-end web developer with the passion for learning new technologies
-            and constantly developing myself as a programmer. I use MERN stack (with MySQL as M),
-            although I am proficient with both SQL and NoSQL databases.
-          </p>
-          <p class="about__description">
-            Since July 2023 I have been working as a Frontend engineer in Sber, Moscow.
-            In last year I have successfully lead the development of the new microservice and
-            the complete rewrite of the legacy microservice into the new stack.
-            Also I have taken crucial part in the creation of the brand-new design system of my product
-          </p>
-          <div class="techs">
-            <h3 class="techs__title">My tech stack</h3>
-            <ul class="techs__list">
-              <li><img src="./assets/html.svg" alt="Html-icon" class="techs__image"></li>
-              <li><img src="./assets/sass-1.svg" alt="Sass-icon" class="techs__image"></li>
-              <li><img src="./assets/jslogo.svg" alt="JS-icon" class="techs__image"></li>
-              <li><img src="./assets/typescript.svg" alt="TS-icon" class="techs__image"></li>
-              <li><img src="./assets/threeproper.svg" alt="threejs-icon" class="techs__image"></li>
-              <li><img src="./assets/React-icon.svg" alt="React-icon" class="techs__image"></li>
-              <li><img src="./assets/redux.svg" alt="Redux-icon" class="techs__image"></li>
-              <li><img src="./assets/firebase.svg" alt="Firebase-icon" class="techs__image"></li>
-              <li><img src="./assets/mysql.svg" alt="Mysql-icon" class="techs__image"></li>
-              <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon" class="techs__image query-icon"></li>
-              <li><img src="./assets/express.svg" alt="Express-icon" class="techs__image"></li>
-              <li><img src="./assets/nodejs-icon.svg" alt="Node-icon" class="techs__image"></li>
-              <li><img src="./assets/git.svg" alt="Git-icon" class="techs__image"></li>
-            </ul>
-          </div>
-        </div>
-    </section>
-
-    <section id="experience" class="experience">
-      <h2 class="experience__heading">Professional experience</h1>
-        <article class="job">
-          <div class="job__titling">
-            <h3 class="job__place local-heading">SberBank. Central Archive Service (CARS)</h3>
-            <p class="job__title">Frontend engineer (from July 2023)</p>
-          </div>
-          <div class="job__description">
-            <div class="responsibilities">
-              <p style="font-size: 1.25rem; margin-bottom: .5rem; font-weight: 500">Responsibilities</p>
-              <ul class="responsibilities__list">
-                <li class="responsibilities__item"> - Leading the development of new microservices through analytics,
-                  planning, implementation and deploy</li>
-                <li class="responsibilities__item"> - Taking active part in migrating 4 existing microservices into new
-                  design system</li>
-                <li class="responsibilities__item"> - Maintaining existing microservices</li>
-              </ul>
+    <header class="header">
+        <nav class="nav primary-container">
+            <p class="nav__logo">Rinat's Portfolio</p>
+            <div class="list-wrapper">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#about" class="nav-list__link">About</a></li>
+                    <li class="nav-list__item"><a href="#experience" class="nav-list__link">Experience</a></li>
+                    <li class="nav-list__item"><a href="#projects" class="nav-list__link">Projects</a></li>
+                    <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact</a></li>
+                </ul>
+                <div class="flex-justify-between">
+                    <a target="_blank" href="https://github.com/rdtabb" class="nav-link">
+                        <img src="./assets/github-mark-white.svg" class="nav-link__img" alt="github-icon">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/rinat-tabaev-profile/" class="nav-link">
+                        <img src="./assets/lin.svg" class="nav-link__img" alt="linkedin-icon">
+                    </a>
+                </div>
             </div>
-            <div class="achievements">
-              <p style="font-size: 1.25rem; margin-bottom: .5rem; font-weight: 500;">Achievements</p>
-              <ul class="achievements__list">
-                <li class="achievements__item"> 
-                  - Migrated microservice with 40k lines of code from legacy architecture
-                  (RxJS, Redux, Ajax) to modern solutions (Redux Toolkit, React Query, Styled Components)
-                </li>
-                <li class="achievements__item"> 
-                  - Developed MVP of the new microservice in 2 weeks with pixel-perfect design 
-                  and clean business logic architecture
-                </li>
-              </ul>
-            </div>
-          </div>
+        </nav>
+
+        <article class="lead">
+            <h1 class="lead__heading">Hi, I'm Rinat.<span>Front-end engineer.</span></h1>
+            <p class="lead__cta">Drag sphere to see come magic</p>
+            <p class="lead__paragraph">Scroll to get stellar experience.</p>
         </article>
+
+        <canvas class="webgl"></canvas>
+
+    </header>
+
+    <main class="main medium-container">
+
+        <section id="about" class="about">
+            <div class="about-wrapper">
+
+                <h2 class="section-heading">About me</h1>
+                    <p class="about-wrapper__description">
+                        I am a Front-end web developer with a passion for learning new technologies and constantly
+                        developing myself as a programmer. I have extensive professional experience designing React/SolidJS applications.
+                        Nevertheless, my excellent knowledge of vanilla JS/TS allows me to quickly become proficient with any new front-end tech.
+                    </p>
+                    <p class="about-wrapper__description">
+                        Since July 2023 I have been working as a Frontend engineer in Sber, Moscow. In the last year, I
+                        have successfully led the development of the several new microservices and the complete rewrite of the
+                        legacy microservice into the new stack. Also, I have taken a crucial part in the creation of the
+                        brand-new design system for my product.
+                    </p>
+                    <div class="techs">
+                        <h3 class="techs__title">My tech stack</h3>
+                        <ul class="techs__list">
+                            <li><img src="./assets/typescript.svg" alt="TS-icon" class="techs__image"></li>
+                            <li><img src="./assets/jslogo.svg" alt="JS-icon" class="techs__image"></li>
+                            <li><img src="./assets/React-icon.svg" alt="React-icon" class="techs__image"></li>
+                            <li><img src="./assets/solid-js.svg" alt="Solid-icon" class="techs__image"></li>
+                            <li><img src="./assets/redux.svg" alt="Redux-icon" class="techs__image"></li>
+                            <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon"
+                                    class="techs__image query-icon"></li>
+                            <li><img src="./assets/git.svg" alt="Git-icon" class="techs__image"></li>
+                            <li><img src="./assets/sass-1.svg" alt="Sass-icon" class="techs__image"></li>
+                            <li><img src="./assets/threeproper.svg" alt="threejs-icon" class="techs__image"></li>
+                            <li><img src="./assets/nodejs-icon.svg" alt="Node-icon" class="techs__image"></li>
+                            <li><img src="./assets/express.svg" alt="Express-icon" class="techs__image"></li>
+                            <li><img src="./assets/mysql.svg" alt="Mysql-icon" class="techs__image"></li>
+                            <li><img src="./assets/firebase.svg" alt="Firebase-icon" class="techs__image"></li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="experience-wrapper">
+                <h2 class="experience__heading">Professional experience</h2>
+                <article class="job">
+                    <div class="job__titling">
+                        <h3 class="job__place local-heading">SberBank. Central Archive Service (CARS)</h3>
+                        <p class="job__title">Frontend engineer (since July 2023)</p>
+                    </div>
+                    <div class="job__description">
+                        <div class="responsibilities">
+                            <p style="font-size: 1.25rem; margin-bottom: .5rem; font-weight: 500">Responsibilities</p>
+                            <ul class="responsibilities__list">
+                                <li class="responsibilities__item"> - Led the development of new microservices through
+                                    analytics, planning, implementation and deploy</li>
+                                <li class="responsibilities__item"> - Took an active part in migrating 4 existing
+                                    microservices into the new design system</li>
+                            </ul>
+                        </div>
+                        <div class="achievements">
+                            <p style="font-size: 1.25rem; margin-bottom: .5rem; font-weight: 500;">Achievements</p>
+                            <ul class="achievements__list">
+                                <li class="achievements__item">
+                                    - Migrated microservice with 40k lines of code from legacy architecture
+                                    (RxJS, Redux, Ajax) to modern solutions (Redux Toolkit, React Query, ReactV18,
+                                    react-hook-form)
+                                </li>
+                                <li class="achievements__item">
+                                    - Developed MVP of the new microservice in 2 weeks with pixel-perfect design
+                                    and clean business logic architecture
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="techs" style="margin-top: 1rem;">
+                        <h3 class="techs__title">Tech I used professionally</h3>
+                        <ul class="techs__list">
+                            <li><img src="./assets/typescript.svg" alt="TS-icon" class="techs__image"></li>
+                            <li><img src="./assets/jslogo.svg" alt="JS-icon" class="techs__image"></li>
+                            <li><img src="./assets/React-icon.svg" alt="React-icon" class="techs__image"></li>
+                            <li><img src="./assets/solid-js.svg" alt="Solid-icon" class="techs__image"></li>
+                            <li><img src="./assets/redux.svg" alt="Redux-icon" class="techs__image"></li>
+                            <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon"
+                                    class="techs__image query-icon"></li>
+                            <li><img src="./assets/git.svg" alt="Git-icon" class="techs__image"></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="projects__heading">My projects</h2>
+
+            <div class="projects__container">
+
+                <div class="project__container">
+                    <article class="project project--fullstack">
+                        <img height="570px" width="470px" src="./assets/blog.png" alt="Expressive-blog"
+                            class="project__cover project__cover--fullstack safari-only-height-reset">
+                        <div class="project__info-wrapper">
+                            <h3 class="project__title">Expressive Full-stack. In progress.</h3>
+                            <div class="project__description">
+                                <ul class="functionality">
+                                    <li> - This is a full-stack application with user-authentication</li>
+                                    <li> - After registration and login users can make text posts on their profiles</li>
+                                    <li> - Users can view and comment on each other's posts</li>
+                                    <li> - Frontend tech: React, SASS, Typescript</li>
+                                    <li> - Backend tech: ExpressJS, NodeJS, MySQL</li>
+                                </ul>
+                                <ul class="technologies technologies--fullstack">
+                                    <li><img src="./assets/React-icon.svg" alt="React-icon"></li>
+                                    <li><img src="./assets/typescript.svg" alt="React-icon"></li>
+                                    <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon"
+                                            class="techs__image query-icon"></li>
+                                    <li><img src="./assets/mysql.svg" alt="Sass-icon"></li>
+                                    <li><img src="./assets/express.svg" alt="Sass-icon"></li>
+                                    <li><img src="./assets/nodejs-icon.svg" alt="Sass-icon"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <ul class="project__links">
+                        <a target="_blank" href="https://github.com/rdtabb/Expressive.-Full-stack-blog"
+                            class="link"><img src="./assets/github-mark-white.svg" alt="Github link"></a>
+                    </ul>
+                </div>
+
+                <div class="project__container">
+                    <article class="project project--meets">
+                        <img height="570px" width="470px" src="./assets/meets.png" alt="Meets-network"
+                            class="project__cover project__cover--meets safari-only-height-reset">
+                        <div class="project__info-wrapper">
+                            <h3 class="project__title">Meets. Social network.</h3>
+                            <div class="project__description">
+                                <ul class="functionality">
+                                    <li> - Full-stack social network application with user authentication</li>
+                                    <li> - After authenticating, you can edit your profile and add posts with photos
+                                    </li>
+                                    <li> - You can view other users' profiles and like their posts</li>
+                                    <li> - All the posts you liked can be viewed on a separate page in your profile
+                                    </li>
+                                    <li> - You can send messages to any user in a separate chat room</li>
+                                    <li> - Backend is handled by Firebase, while Frontend is made via React, TS and SASS
+                                    </li>
+                                </ul>
+                                <ul class="technologies">
+                                    <li><img src="./assets/React-icon.svg" alt="React-icon"></li>
+                                    <li><img src="./assets/typescript.svg" alt="Sass-icon"></li>
+                                    <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon"
+                                            class="techs__image query-icon"></li>
+                                    <li><img src="./assets/redux.svg" alt="Redux-icon"></li>
+                                    <li><img src="./assets/sass-1.svg" alt="Sass-icon"></li>
+                                    <li><img src="./assets/firebase.svg" alt="firebase-icon"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <ul class="project__links">
+                        <a target="_blank" href="https://github.com/rdtabb/Meets" class="link"><img
+                                src="./assets/github-mark-white.svg" alt=""></a>
+                        <a target="_blank" href="https://meetsnetwork.netlify.app/" class="link"><img
+                                src="./assets/internet.png" alt=""></a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="contact" class="contact">
+        <article class="cta">
+            <div class="cta__positioning">
+                <h2 class="cta__heading">
+                    Like what you see? Contact me
+                </h2>
+                <div class="cta__contacts">
+                    <p class="cta__email">rintabaev@gmail.com</p>
+                    <p class="cta__number">+79963549619</p>
+                </div>
+                <p class="submitted">Form submitted successfully!</p>
+            </div>
+        </article>
+        <form data-netlify="true" method="post" action="/#contact" name="contact-form" id="form"
+            class="form medium-container">
+            <div class="form__userdata">
+                <input required minlength="2" class="form__name" name="name" placeholder="Your name..." type="text">
+                <input required class="form__email" name="email" placeholder="Your email..." type="email">
+            </div>
+            <textarea required class="form__message" placeholder="Your message..." name="message" cols="20"
+                rows="10"></textarea>
+            <button type="submit" class="form__submit">Submit</button>
+        </form>
     </section>
 
-    <section id="projects" class="projects">
-      <h2 class="projects__heading">My projects</h2>
+    <footer class="footer medium-container">
+        <p class="footer__copyright"></p>
+    </footer>
 
-      <div class="projects__container">
-
-        <div class="project__container">
-          <article class="project project--fullstack">
-            <img src="./assets/blog.png" alt="Expressive-blog" class="project__cover project__cover--fullstack">
-            <div class="project__info-wrapper">
-              <h3 class="project__title">Expressive Full-stack. In process.</h3>
-              <div class="project__description">
-                <ul class="functionality">
-                  <li> - This is full-stack application with user-authentication</li>
-                  <li> - After registration and login users can make text posts in their profiles</li>
-                  <li> - Users can view and comment each other's posts</li>
-                  <li> - Frontend tech: React, SASS, Typescript</li>
-                  <li> - Backend tech: ExpressJS, NodeJS, MySQL</li>
-                </ul>
-                <ul class="technologies technologies--fullstack">
-                  <li><img src="./assets/React-icon.svg" alt="React-icon"></li>
-                  <li><img src="./assets/sass-1.svg" alt="React-icon"></li>
-                  <li><img src="./assets/typescript.svg" alt="React-icon"></li>
-                  <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon" class="techs__image query-icon"></li>
-                  <li><img src="./assets/mysql.svg" alt="Sass-icon"></li>
-                  <li><img src="./assets/express.svg" alt="Sass-icon"></li>
-                  <li><img src="./assets/nodejs-icon.svg" alt="Sass-icon"></li>
-                </ul>
-              </div>
-            </div>
-          </article>
-          <ul class="project__links">
-            <a target="_blank" href="https://github.com/rdtabb/Expressive.-Full-stack-blog" class="link"><img
-                src="./assets/github-mark-white.svg" alt="Github link"></a>
-          </ul>
-        </div>
-
-        <div class="project__container">
-          <article class="project project--meets">
-            <img src="./assets/meets.png" alt="Meets-network" class="project__cover project__cover--meets">
-            <div class="project__info-wrapper">
-              <h3 class="project__title">Meets. Social network.</h3>
-              <div class="project__description">
-                <ul class="functionality">
-                  <li> - Full-stack social network application with user authentication and signout functionality</li>
-                  <li> - After authenticating, you can edit your profile and add posts with photos</li>
-                  <li> - You can view other users' profiles and like their posts</li>
-                  <li> - All the posts you liked can be viewed on the separate page in your profile</li>
-                  <li> - You can send message to any user in a separate chat-room</li>
-                  <li> - Backend is handled by Firebase, while Frontend is made via React, TS and SASS</li>
-                </ul>
-                <ul class="technologies">
-                  <li><img src="./assets/React-icon.svg" alt="React-icon"></li>
-                  <li><img src="./assets/redux.svg" alt="Redux-icon"></li>
-                  <li><img src="./assets/typescript.svg" alt="Sass-icon"></li>
-                  <li><img src="./assets/sass-1.svg" alt="Sass-icon"></li>
-                  <li><img src="./assets/firebase.svg" alt="firebase-icon"></li>
-                  <li><img src="./assets/react-query-icon.svg" alt="Mysql-icon" class="techs__image query-icon"></li>
-                </ul>
-              </div>
-            </div>
-          </article>
-          <ul class="project__links">
-            <a target="_blank" href="https://github.com/rdtabb/Meets" class="link"><img
-                src="./assets/github-mark-white.svg" alt=""></a>
-            <a target="_blank" href="https://meetsnetwork.netlify.app/" class="link"><img src="./assets/internet.png"
-                alt=""></a>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <section id="contact" class="contact">
-    <article class="cta">
-      <div class="cta__positioning">
-        <h2 class="cta__heading">
-          Like what you see? Contact me
-        </h2>
-        <div class="cta__contacts">
-          <p class="cta__email">rintabaev@gmail.com</p>
-          <p class="cta__number">+79963549619</p>
-        </div>
-        <p class="submitted">Form submitted successfully!</p>
-      </div>
-    </article>
-    <form data-netlify="true" method="post" action="/#contact" name="contact-form" id="form"
-      class="form medium-container">
-      <div class="form__userdata">
-        <input required minlength="2" class="form__name" name="name" placeholder="Your name..." type="text">
-        <input required class="form__email" name="email" placeholder="Your email..." type="email">
-      </div>
-      <textarea required class="form__message" placeholder="Your message..." name="message" cols="20"
-        rows="10"></textarea>
-      <button type="submit" class="form__submit">Submit</button>
-    </form>
-  </section>
-
-  <footer class="footer medium-container">
-    <p class="footer__copyright"></p>
-  </footer>
-
-  <script type="module" src="./three.js"></script>
+    <script type="module" src="./three.js"></script>
 </body>
 
 </html>
