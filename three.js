@@ -69,7 +69,7 @@ Array(200).fill().forEach(addStar);
 
 window.addEventListener("resize", () => {
   sizes.width = window.innerWidth;
-//   sizes.height = window.innerHeight;
+  //   sizes.height = window.innerHeight;
 
   camera.aspect = sizes.width / sizes.height;
   camera.updateProjectionMatrix();
@@ -129,10 +129,8 @@ const appearOnScroll = new IntersectionObserver(function (
   appearOnScroll,
 ) {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting && !entry.target.classList.contains("fade-in")) {
       entry.target.classList.add("fade-in");
-    } else {
-      entry.target.classList.remove("fade-in");
     }
   });
 }, options);

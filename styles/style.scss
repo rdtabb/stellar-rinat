@@ -490,6 +490,15 @@ body {
   }
 }
 
+.project--fullstack__desclink {
+  color: hsl(var(--clr-primary));
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 @media (max-width: 60em) {
   .project {
     grid-template-columns: 1fr;
@@ -586,7 +595,7 @@ body {
 }
 
 /* -------------------------------- */
-/* about, techs section      */
+/* about, techs section             */
 /* -------------------------------- */
 
 .about {
